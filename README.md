@@ -1,4 +1,4 @@
-ALPE Token (Alpencoin)
+ALPE Token (Alpecoin)
 
 Willkommen zum offiziellen Repository des ALPE Token – inspiriert von der Alpenregion. Dies ist die finale, verifizierte Version des Smart Contracts mit einem Gesamtvolumen von 21.000.000 ALPE.
 
@@ -52,7 +52,7 @@ Regionale Anwendungen rund um Skisport, Wanderung, Tourismus
 
 🔗 Verknüpfungen
 
-GitHub: Alpen-Token-Finale Repository
+GitHub: Alpe-Token-Finale Repository
 
 Website: alpencoin.wixsite.com (in Vorbereitung)
 
