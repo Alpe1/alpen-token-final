@@ -1,23 +1,78 @@
-# ALPE Token (Alpencoin)
+ALPE Token (Alpencoin)
 
-Dies ist der **offizielle Smart Contract** für den ALPE Token – inspiriert von der Alpenregion.
+Willkommen zum offiziellen Repository des ALPE Token – inspiriert von der Alpenregion. Dies ist die finale, verifizierte Version des Smart Contracts mit einem Gesamtvolumen von 21.000.000 ALPE.
 
-### 🔍 Details
-- ✅ Standard: ERC-20 (mit `burn()` & `mint()`)
-- 🔢 Initial Supply: 21.000.000 ALPE
-- 🔐 Nur der Owner kann zusätzliche Token `mint()`en
-- 🔥 Jeder Holder kann Token verbrennen (`burn()`)
+📅 Projektstatus
 
-### 🌐 Netzwerk
-- **Netzwerk:** OP Sepolia Testnet
-- **Contract-Adresse:** folgt nach Deployment
+Live im OP Sepolia Testnetz.
 
-### ⚙️ Funktionen
-- `mint(address to, uint256 amount)` → nur Owner
-- `burn(uint256 amount)` → für jeden Holder
-- `transfer(address to, uint256 amount)` → Standard-ERC20
+Verifiziert und dokumentiert. Bereit für Test, Analyse und Integration.
 
----
+✨ Highlights
 
-### 🛠 Deployment
-Wurde mit **Remix + MetaMask** durchgeführt. Besitzeradresse ist der Contract-Ersteller.
+Name: Alpencoin
+
+Symbol: ALPE
+
+Supply: 21.000.000 Token (18 Dezimalstellen)
+
+Standard: ERC-20 + Burn + Mint + Ownable
+
+Status: Finaler, geprüfter Contract (Stand: Mai 2025)
+
+🔧 Funktionen
+
+Funktion
+
+Beschreibung
+
+mint(address, uint256)
+
+Token nachträglich erzeugen (nur Owner)
+
+burn(uint256)
+
+Token verbrennen (von jedem Halter)
+
+transfer(address, uint256)
+
+Standard ERC-20 Transfer
+
+💡 Verwendung
+
+Der Token kann z. B. in folgenden Szenarien eingesetzt werden:
+
+DApp-Projekte
+
+NFT-Marktplätze
+
+Treueprogramme & Points-Systeme
+
+Regionale Anwendungen rund um Skisport, Wanderung, Tourismus
+
+🔗 Verknüpfungen
+
+GitHub: Alpen-Token-Finale Repository
+
+Website: alpencoin.wixsite.com (in Vorbereitung)
+
+🌐 Deployment (Remix / MetaMask)
+
+Remix öffnen und Contract einfügen
+
+Netzwerk: OP Sepolia Testnet
+
+Deploy mit deiner Wallet-Adresse als Owner
+
+Token-Adresse sichern & verifizieren
+
+📄 Lizenz
+
+MIT License – freie Nutzung und Weiterverwendung erlaubt.
+
+🌟 Hinweis
+
+Dies ist der offizielle Contract von [Alpe1] für den ALPE Token. Bitte keine Duplikate ohne Verweis veröffentlichen.
+
+Danke für dein Interesse am ALPE Token! 🌿
+
