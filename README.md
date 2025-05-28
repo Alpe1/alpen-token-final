@@ -10,7 +10,7 @@ Verifiziert und dokumentiert. Bereit für Test, Analyse und Integration.
 
 ✨ Highlights
 
-Name: Alpencoin
+Name: Alpecoin
 
 Symbol: ALPE
 
