@@ -1,78 +1,37 @@
-ALPE Token (Alpecoin)
+# 🏔️ ALPECOIN – Der digitale Token der Alpenregion
 
-Willkommen zum offiziellen Repository des ALPE Token – inspiriert von der Alpenregion. Dies ist die finale, verifizierte Version des Smart Contracts mit einem Gesamtvolumen von 21.000.000 ALPE.
+**Token-Name:** ALPE  
+**Maximale Menge:** 21.000.000 ALPE  
+**Dezimalstellen:** 18  
+**Netzwerk:** Optimism Sepolia (Testnet)
 
-📅 Projektstatus
+---
 
-Live im OP Sepolia Testnetz.
+## 📜 Überblick
 
-Verifiziert und dokumentiert. Bereit für Test, Analyse und Integration.
+ALPECOIN ist ein symbolischer Token, inspiriert von der Natur und Kultur der Alpen.  
+Das Projekt entstand aus einer Idee von **Alexander & Peter**, umgesetzt mit moderner Web3-Technologie.
 
-✨ Highlights
+---
 
-Name: Alpecoin
+## 🚀 Features
 
-Symbol: ALPE
+- **Burn-Funktion** (Tokenvernichtung)  
+- **Airdrop-Funktion** (Test-Token anfordern)  
+- **ALPE Wallet App** (mobile Version in Arbeit)  
+- Web-DApps für Testzwecke verfügbar
 
-Supply: 21.000.000 Token (18 Dezimalstellen)
+---
 
-Standard: ERC-20 + Burn + Mint + Ownable
+## 🔗 Wichtige Links
 
-Status: Finaler, geprüfter Contract (Stand: Mai 2025)
+- 🔥 [Burn DApp (Test)](https://alpencoinat.wixsite.com/alpencoin/alpe-burn-dapp)  
+- 🧪 [Test Wallet DApp](https://alpencoinat.wixsite.com/alpencoin/alpe-test-app)  
+- 💻 [Smart Contract auf Tenderly](https://dashboard.tenderly.co/Maddog/alpe-token-test/infrastructure)  
+- 🌐 [Offizielle Website](https://www.alpencoin.at)
 
-🔧 Funktionen
+---
 
-Funktion
+## 📄 Lizenz
 
-Beschreibung
-
-mint(address, uint256)
-
-Token nachträglich erzeugen (nur Owner)
-
-burn(uint256)
-
-Token verbrennen (von jedem Halter)
-
-transfer(address, uint256)
-
-Standard ERC-20 Transfer
-
-💡 Verwendung
-
-Der Token kann z. B. in folgenden Szenarien eingesetzt werden:
-
-DApp-Projekte
-
-NFT-Marktplätze
-
-Treueprogramme & Points-Systeme
-
-Regionale Anwendungen rund um Skisport, Wanderung, Tourismus
-
-🔗 Verknüpfungen
-
-GitHub: Alpe-Token-Finale Repository
-
-Website: alpencoin.wixsite.com (in Vorbereitung)
-
-🌐 Deployment (Remix / MetaMask)
-
-Remix öffnen und Contract einfügen
-
-Netzwerk: OP Sepolia Testnet
-
-Deploy mit deiner Wallet-Adresse als Owner
-
-Token-Adresse sichern & verifizieren
-
-📄 Lizenz
-
-MIT License – freie Nutzung und Weiterverwendung erlaubt.
-
-🌟 Hinweis
-
-Dies ist der offizielle Contract von [Alpe1] für den ALPE Token. Bitte keine Duplikate ohne Verweis veröffentlichen.
-
-Danke für dein Interesse am ALPE Token! 🌿
-
+MIT License – (c) 2024 Alexander & Peter
