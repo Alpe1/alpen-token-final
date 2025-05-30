@@ -1,29 +1,51 @@
-# node modules
-node_modules/
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-# build output
-dist/
-build/
-.expo/
-.expo-shared/
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-# system files
-.DS_Store
-Thumbs.db
+contract Alpencoin is ERC20Burnable, Ownable {
+    uint256 public constant MAX_SUPPLY = 21_000_000 * 10**18;
+    uint256 public constant MINT_REWARD = 50 * 10**18;
+    uint256 public constant MINT_INTERVAL = 10 minutes;
 
-# environment
-.env
-.env.local
-.env.*.local
+    mapping(address => uint256) public lastMineTime;
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+    event Mined(address indexed miner, uint256 reward, uint256 timestamp);
 
-# IDEs
-.vscode/
-.idea/
+    constructor(address initialOwner) ERC20("Alpencoin", "ALPE") Ownable(initialOwner) {
+        // Optional: Vorab 1 Mio ALPE an den Owner senden
+        uint256 initialSupply = 1_000_000 * 10**18;
+        _mint(initialOwner, initialSupply);
+    }
 
-# OS
-*.swp
+    /// @notice Jeder darf minen, aber nur alle 10 Minuten pro Wallet
+    function mine() public {
+        require(block.timestamp >= lastMineTime[msg.sender] + MINT_INTERVAL, "Bitte warte 10 Minuten");
+        require(totalSupply() + MINT_REWARD <= MAX_SUPPLY, "Maximale Menge erreicht");
+
+        _mint(msg.sender, MINT_REWARD);
+        lastMineTime[msg.sender] = block.timestamp;
+
+        emit Mined(msg.sender, MINT_REWARD, block.timestamp);
+    }
+
+    /// @notice Nur der Owner darf gezielt minten (z. B. für Reserve)
+    function mint(address to, uint256 amount) public onlyOwner {
+        require(totalSupply() + amount <= MAX_SUPPLY, "Exceeds max supply");
+        _mint(to, amount);
+    }
+
+    function getRemainingSupply() public view returns (uint256) {
+        return MAX_SUPPLY - totalSupply();
+    }
+
+    function canMineNow(address user) public view returns (bool) {
+        return block.timestamp >= lastMineTime[user] + MINT_INTERVAL &&
+               totalSupply() + MINT_REWARD <= MAX_SUPPLY;
+    }
+
+    function getNextMiningTime(address user) public view returns (uint256) {
+        return lastMineTime[user] + MINT_INTERVAL;
+    }
+}
