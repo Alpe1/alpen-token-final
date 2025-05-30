@@ -28,7 +28,7 @@ Das Projekt entstand aus einer Idee von **Alexander & Peter**, umgesetzt mit mod
 - 🔥 [Burn DApp (Test)](https://alpencoinat.wixsite.com/alpencoin/alpe-burn-dapp)  
 - 🧪 [Test Wallet DApp](https://alpencoinat.wixsite.com/alpencoin/alpe-test-app)  
 - 💻 [Smart Contract auf Tenderly](https://dashboard.tenderly.co/Maddog/alpe-token-test/infrastructure)  
-- 🌐 [Offizielle Website](https://www.alpencoin.at)
+- 🌐 [Offizielle Website](https://alpencoinat.wixsite.com/alpencoin)
 
 ---
 
